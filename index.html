@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Theme Selector</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Click the swatches to change the theme</h1>
+        <div class="swatches">
+            <span style="background: blue"> </span>
+            <span style="background: black"> </span>
+            <span style="background: fuchsia"> </span>
+            <span style="background: darkolivegreen"> </span>
+            <span style="background: darkgray"> </span>
+        </div>
+        <div class="container"></div>
+        <h2>Color is getting changed</h2>
+        <h3>Color is getting changed again</h3>
+        <h4>Color is getting changed again</h4>
+    </body>
+    <script>
+        let swatches = document.querySelectorAll('.swatches span');
+        let root = document.querySelector(':root');
+        swatches.forEach((swatch) => {
+            swatch.addEventListener('click', (e) => {
+                root.style.setProperty('--theme-color', e.target.style.background);
+            });
+        });
+    </script>
+</html>
