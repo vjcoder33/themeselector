@@ -1,5 +1,7 @@
 # themeselector
 
+Site in action @ https://vjcoder33.github.io/themeselector/
+
 This project demonstrates the usage of CSS Variables. Using which we can perform a site level theme update. 
 
 * CSS variables can be defined in any selector, defining in * :root * would help them available across CSS rules.
